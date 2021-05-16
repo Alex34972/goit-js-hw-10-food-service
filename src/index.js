@@ -1,1 +1,2 @@
-import './js/foodcards'
+import './js/foodcards';
+import './js/themabody';

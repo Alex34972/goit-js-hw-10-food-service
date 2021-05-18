@@ -4,8 +4,11 @@
   "description": "Homework 10",
   "main": "index.js",
   "dependencies": {
+    "-": "0.0.1",
+    "install": "^0.13.0",
     "parcel-bundler": "^1.12.5",
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
@@ -13,9 +16,10 @@
     "sass": "^1.32.13"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html--public-url/goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,5 +30,5 @@
   "bugs": {
     "url": "https://github.com/Alex34972/goit-js-hw-10-food-service/issues"
   },
-  "homepage": "https://Alex34972.github.io/goit-js-hw-10-food-service#readme"
+  "homepage": "https://Alex34972.github.io/goit-js-hw-10-food-service"
 }
